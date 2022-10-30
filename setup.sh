@@ -35,4 +35,4 @@ alias la='exa -a'
 alias ll='exa -lah'
 alias ls='exa --color=auto'" >> .bashrc
 
-source .bashrc
+sudo apt install fzf
