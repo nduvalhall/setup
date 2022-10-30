@@ -1,5 +1,4 @@
 #! usr/bin/bash
-cd ..
 
 echo "Updating System"
 sudo apt-get update
@@ -36,5 +35,4 @@ alias la='exa -a'
 alias ll='exa -lah'
 alias ls='exa --color=auto'" >> .bashrc
 
-cd ..
 source .bashrc
