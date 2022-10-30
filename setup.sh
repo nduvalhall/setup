@@ -8,10 +8,6 @@ sudo apt-get dist-upgrade -y
 sudo apt-get autoremove -y 
 sudo apt-get autoclean -y
 
-echo "Adding Directories"
-mkdir documents
-mkdir .config
-
 echo "Installing Starship"
 curl -sS https://starship.rs/install.sh | sh
 echo 'eval "$(starship init bash)"' >> .bashrc
@@ -26,13 +22,6 @@ chmod u+x nvim.appimage
 sudo mv squashfs-root /
 sudo ln -s /squashfs-root/AppRun /usr/bin/nvim
 echo 'alias nv="nvim"' >> .bashrc
-
-echo "Installing Exa"
-sudo apt install exa
-echo "
-alias l='exa'
-alias la='exa -a'
-alias ll='exa -lah'
-alias ls='exa --color=auto'" >> .bashrc
+mv nvim.appimage ./NeoVim
 
 sudo apt install fzf
