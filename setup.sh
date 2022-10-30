@@ -15,7 +15,6 @@ mkdir .config
 
 echo "Installing Starship"
 curl -sS https://starship.rs/install.sh | sh
-y
 echo 'eval "$(starship init bash)"' >> .bashrc
 touch .config/starship.toml
 starship preset nerd-font-symbols > ~/.config/starship.toml
@@ -36,3 +35,5 @@ alias l='exa'
 alias la='exa -a'
 alias ll='exa -lah'
 alias ls='exa --color=auto'" >> .bashrc
+
+source .bashrc
